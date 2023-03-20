@@ -16,8 +16,8 @@ Feed module enables everyone to have RSS, Atom and JSON.
 
 - Nuxt 3 ready
 - Three different feed types (RSS 2.0, ATOM 1.0 and JSON 1.0)
-- Completely customizable.
-- Completely customizable. Need to fetch data before? No problem!
+- Completely customizable
+- Multiple feeds
 - Works with all modes (SSR, SSG)
 
 ## Quick Setup
