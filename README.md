@@ -1,4 +1,4 @@
-# nuxt-feed
+# nuxt-module-feed
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
@@ -8,7 +8,7 @@
 Feed module enables everyone to have RSS, Atom and JSON.
 
 - [✨ &nbsp;Release Notes](/CHANGELOG.md)
-  <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-feed &nbsp;Documentation](https://example.com) -->
+  <!-- - [🏀 Online playground](https://stackblitz.com/github/your-org/nuxt-module-feed &nbsp;Documentation](https://example.com) -->
 
 ## Features
 
@@ -22,28 +22,28 @@ Feed module enables everyone to have RSS, Atom and JSON.
 
 ## Quick Setup
 
-1. Add `nuxt-feed` dependency to your project
+1. Add `nuxt-module-feed` dependency to your project
 
 ```bash
 # Using pnpm
-pnpm add -D nuxt-feed
+pnpm add -D nuxt-module-feed
 
 # Using yarn
-yarn add --dev nuxt-feed
+yarn add --dev nuxt-module-feed
 
 # Using npm
-npm install --save-dev nuxt-feed
+npm install --save-dev nuxt-module-feed
 ```
 
-2. Add `nuxt-feed` to the `modules` section of `nuxt.config.ts`
+2. Add `nuxt-module-feed` to the `modules` section of `nuxt.config.ts`
 
 ```js
 export default defineNuxtConfig({
-  modules: ["nuxt-feed"],
+  modules: ["nuxt-module-feed"],
 });
 ```
 
-That's it! You can now use nuxt-feed in your Nuxt app ✨
+That's it! You can now use nuxt-module-feed in your Nuxt app ✨
 
 ## Configuration
 
@@ -83,7 +83,7 @@ modifying the feed object that is passed to the create function.
 Note: It works for SSG and prerendered pages.
 
 ```ts
-import type { NitroCtx, Feed } from "nuxt-feed";
+import type { NitroCtx, Feed } from "nuxt-module-feed";
 
 export default defineNitroPlugin((nitroApp) => {
   nitroApp.hooks.hook("feed:generate", async ({ feed, options }: NitroCtx) => {
@@ -215,11 +215,11 @@ pnpm run release
 
 <!-- Badges -->
 
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-feed/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/nuxt-feed
-[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-feed.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/nuxt-feed
-[license-src]: https://img.shields.io/npm/l/nuxt-feed.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/nuxt-feed
+[npm-version-src]: https://img.shields.io/npm/v/nuxt-module-feed/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/nuxt-module-feed
+[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-module-feed.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/nuxt-module-feed
+[license-src]: https://img.shields.io/npm/l/nuxt-module-feed.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-href]: https://npmjs.com/package/nuxt-module-feed
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com

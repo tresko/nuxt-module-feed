@@ -1,5 +1,5 @@
 {
-  "name": "nuxt-feed",
+  "name": "nuxt-module-feed",
   "version": "1.0.0",
   "description": "Nuxt 3 feed module enables everyone to have RSS, Atom and JSON",
   "repository": "tresko/nuxt-feed",

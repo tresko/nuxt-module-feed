@@ -5,7 +5,7 @@ export * from './types'
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: 'nuxt-feed',
+    name: 'nuxt-module-feed',
     configKey: 'feed',
   },
   defaults: {
