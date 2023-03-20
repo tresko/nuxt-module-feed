@@ -1,5 +1,5 @@
 <template>
-  <div>basic</div>
+  <NuxtPage />
 </template>
 
 <script setup>

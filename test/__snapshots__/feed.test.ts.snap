@@ -1,0 +1,163 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ssr > renders the atom feed 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"utf-8\\"?>
+<feed xmlns=\\"http://www.w3.org/2005/Atom\\">
+    <id>Test Feed</id>
+    <title>Test Feed</title>
+    <updated>2023-01-31T23:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <rights>Test company</rights>
+    <category term=\\"Nuxt.js\\"/>
+    <contributor>
+        <name>Miha Sedej</name>
+        <email>sedej.miha@gmail.com</email>
+        <uri>https://tresko.dev/</uri>
+    </contributor>
+    <entry>
+        <title type=\\"html\\"><![CDATA[Post 1]]></title>
+        <id>https://example.com/post-1</id>
+        <link href=\\"https://example.com/post-1\\"/>
+        <updated>2022-01-01T00:00:00.000Z</updated>
+        <summary type=\\"html\\"><![CDATA[This is the first post]]></summary>
+        <content type=\\"html\\"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit.]]></content>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[Post 2]]></title>
+        <id>https://example.com/post-2</id>
+        <link href=\\"https://example.com/post-2\\"/>
+        <updated>2022-01-05T00:00:00.000Z</updated>
+        <summary type=\\"html\\"><![CDATA[This is the second post]]></summary>
+        <content type=\\"html\\"><![CDATA[Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]]></content>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[Post 3]]></title>
+        <id>https://example.com/post-3</id>
+        <link href=\\"https://example.com/post-3\\"/>
+        <updated>2022-01-10T00:00:00.000Z</updated>
+        <summary type=\\"html\\"><![CDATA[This is the third post]]></summary>
+        <content type=\\"html\\"><![CDATA[Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.]]></content>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[Post 4]]></title>
+        <id>https://example.com/post-4</id>
+        <link href=\\"https://example.com/post-4\\"/>
+        <updated>2022-01-15T00:00:00.000Z</updated>
+        <summary type=\\"html\\"><![CDATA[This is the fourth post]]></summary>
+        <content type=\\"html\\"><![CDATA[Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.]]></content>
+    </entry>
+    <entry>
+        <title type=\\"html\\"><![CDATA[Post 5]]></title>
+        <id>https://example.com/post-5</id>
+        <link href=\\"https://example.com/post-5\\"/>
+        <updated>2022-01-20T00:00:00.000Z</updated>
+        <summary type=\\"html\\"><![CDATA[This is the fifth post]]></summary>
+        <content type=\\"html\\"><![CDATA[Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content>
+    </entry>
+</feed>"
+`;
+
+exports[`ssr > renders the json feed 1`] = `
+{
+  "items": [
+    {
+      "content_html": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "date_modified": "2022-01-01T00:00:00.000Z",
+      "id": "https://example.com/post-1",
+      "summary": "This is the first post",
+      "title": "Post 1",
+      "url": "https://example.com/post-1",
+    },
+    {
+      "content_html": "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "date_modified": "2022-01-05T00:00:00.000Z",
+      "id": "https://example.com/post-2",
+      "summary": "This is the second post",
+      "title": "Post 2",
+      "url": "https://example.com/post-2",
+    },
+    {
+      "content_html": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "date_modified": "2022-01-10T00:00:00.000Z",
+      "id": "https://example.com/post-3",
+      "summary": "This is the third post",
+      "title": "Post 3",
+      "url": "https://example.com/post-3",
+    },
+    {
+      "content_html": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      "date_modified": "2022-01-15T00:00:00.000Z",
+      "id": "https://example.com/post-4",
+      "summary": "This is the fourth post",
+      "title": "Post 4",
+      "url": "https://example.com/post-4",
+    },
+    {
+      "content_html": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "date_modified": "2022-01-20T00:00:00.000Z",
+      "id": "https://example.com/post-5",
+      "summary": "This is the fifth post",
+      "title": "Post 5",
+      "url": "https://example.com/post-5",
+    },
+  ],
+  "title": "Test Feed",
+  "version": "https://jsonfeed.org/version/1",
+}
+`;
+
+exports[`ssr > renders the rss feed 1`] = `
+"<?xml version=\\"1.0\\" encoding=\\"utf-8\\"?>
+<rss version=\\"2.0\\" xmlns:dc=\\"http://purl.org/dc/elements/1.1/\\" xmlns:content=\\"http://purl.org/rss/1.0/modules/content/\\">
+    <channel>
+        <title>Test Feed</title>
+        <link>undefined</link>
+        <description>undefined</description>
+        <lastBuildDate>Tue, 31 Jan 2023 23:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <copyright>Test company</copyright>
+        <category>Nuxt.js</category>
+        <item>
+            <title><![CDATA[Post 1]]></title>
+            <link>https://example.com/post-1</link>
+            <guid>https://example.com/post-1</guid>
+            <pubDate>Sat, 01 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is the first post]]></description>
+            <content:encoded><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Post 2]]></title>
+            <link>https://example.com/post-2</link>
+            <guid>https://example.com/post-2</guid>
+            <pubDate>Wed, 05 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is the second post]]></description>
+            <content:encoded><![CDATA[Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Post 3]]></title>
+            <link>https://example.com/post-3</link>
+            <guid>https://example.com/post-3</guid>
+            <pubDate>Mon, 10 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is the third post]]></description>
+            <content:encoded><![CDATA[Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Post 4]]></title>
+            <link>https://example.com/post-4</link>
+            <guid>https://example.com/post-4</guid>
+            <pubDate>Sat, 15 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is the fourth post]]></description>
+            <content:encoded><![CDATA[Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.]]></content:encoded>
+        </item>
+        <item>
+            <title><![CDATA[Post 5]]></title>
+            <link>https://example.com/post-5</link>
+            <guid>https://example.com/post-5</guid>
+            <pubDate>Thu, 20 Jan 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[This is the fifth post]]></description>
+            <content:encoded><![CDATA[Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content:encoded>
+        </item>
+    </channel>
+</rss>"
+`;
