@@ -1,6 +1,6 @@
 {
   "name": "nuxt-module-feed",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Nuxt 3 feed module enables everyone to have RSS, Atom and JSON",
   "repository": "https://github.com/tresko/nuxt-module-feed",
   "license": "MIT",
