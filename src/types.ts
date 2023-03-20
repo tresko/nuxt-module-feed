@@ -1,7 +1,5 @@
 import type { Feed } from 'feed'
 
-export * from 'feed'
-
 export type FeedType = 'rss2' | 'atom1' | 'json1'
 
 export interface SourceOptions {

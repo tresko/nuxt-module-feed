@@ -1,8 +1,30 @@
 import type { H3Event } from 'h3'
-import { defineEventHandler, setHeader } from '#imports'
+import { defineEventHandler, setHeader, useNitroApp } from '#imports'
+import { Feed } from 'feed'
 import feedOptions from '#feed'
-import { createFeed, resolveContentType } from '../../feed'
-import type { SourceOptions } from '../../types'
+import type { SourceOptions, FeedType, SourceOptions } from '../../types'
+
+function resolveContentType(type: FeedType) {
+  const lookup = {
+    rss2: 'application/rss+xml',
+    atom1: 'application/atom+xml',
+    json1: 'application/json'
+  }
+
+  return lookup[type]
+}
+
+async function createFeed(options: SourceOptions): Promise<string> {
+  const feed = new Feed({
+    id: '',
+    title: '',
+    copyright: '',
+  })
+
+  await useNitroApp().hooks.callHook('feed:generate', { feed, options })
+
+  return feed[options.type]()
+}
 
 export default defineEventHandler(async (event: H3Event) => {
   const options = (feedOptions as Record<string, SourceOptions>)[event.node.req.url as string]
