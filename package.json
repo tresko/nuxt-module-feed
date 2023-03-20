@@ -32,7 +32,8 @@
     "lint": "eslint .",
     "test": "vitest run",
     "test:watch": "vitest watch",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "stackblitz": "cd .stackblitz && pnpm i && pnpm run dev"
   },
   "dependencies": {
     "@nuxt/kit": "3.3.1",
@@ -57,5 +58,9 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "stackblitz": {
+    "installDependencies": false,
+    "startCommand": "pnpm run stackblitz"
   }
 }
