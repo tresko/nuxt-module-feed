@@ -1,12 +1,12 @@
 import type { NitroCtx } from '../../../../../src/module'
 
 export default defineNitroPlugin((nitroApp) => {
-  nitroApp.hooks.hook('feed:generate', async ({ feed, options }: NitroCtx) => {
+  nitroApp.hooks.hook('feed:generate', async ({ feed }: NitroCtx) => {
     feed.options = {
       id: 'Test Feed',
       title: 'Test Feed',
       copyright: 'Test company',
-      updated: new Date(2023, 1, 1)
+      updated: new Date("2023-01-01T00:00:00Z")
     }
 
     type Post = {

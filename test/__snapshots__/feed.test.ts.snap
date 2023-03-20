@@ -5,7 +5,7 @@ exports[`ssr > renders the atom feed 1`] = `
 <feed xmlns=\\"http://www.w3.org/2005/Atom\\">
     <id>Test Feed</id>
     <title>Test Feed</title>
-    <updated>2023-01-31T23:00:00.000Z</updated>
+    <updated>2023-01-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <rights>Test company</rights>
     <category term=\\"Nuxt.js\\"/>
@@ -113,7 +113,7 @@ exports[`ssr > renders the rss feed 1`] = `
         <title>Test Feed</title>
         <link>undefined</link>
         <description>undefined</description>
-        <lastBuildDate>Tue, 31 Jan 2023 23:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 01 Jan 2023 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <copyright>Test company</copyright>
