@@ -6,7 +6,7 @@ specifiers:
   '@nuxt/eslint-config': 0.1.1
   '@nuxt/kit': 3.3.1
   '@nuxt/module-builder': 0.2.1
-  '@nuxt/schema': 3.3.1
+  '@nuxt/schema': 3.3.2
   '@nuxt/test-utils': 3.3.1
   changelogen: 0.5.1
   eslint: 8.36.0
@@ -25,7 +25,7 @@ devDependencies:
   '@commitlint/config-conventional': 17.4.4
   '@nuxt/eslint-config': 0.1.1_eslint@8.36.0
   '@nuxt/module-builder': 0.2.1
-  '@nuxt/schema': 3.3.1
+  '@nuxt/schema': 3.3.2
   '@nuxt/test-utils': 3.3.1
   changelogen: 0.5.1
   eslint: 8.36.0
@@ -1482,7 +1482,7 @@ packages:
       scule: 1.0.0
       std-env: 3.3.2
       ufo: 1.1.1
-      unimport: 3.0.3
+      unimport: 3.0.4
       untyped: 1.2.2
     transitivePeerDependencies:
       - rollup
@@ -1503,7 +1503,29 @@ packages:
       scule: 1.0.0
       std-env: 3.3.2
       ufo: 1.1.1
-      unimport: 3.0.3_rollup@3.19.1
+      unimport: 3.0.4_rollup@3.19.1
+      untyped: 1.2.2
+    transitivePeerDependencies:
+      - rollup
+      - supports-color
+    dev: true
+
+  /@nuxt/schema/3.3.2:
+    resolution: {integrity: sha512-M2X/iwdX4hct31A7LA2+e41F91VZUXmwS5sZ03G49RnZdEXHMOKBO67e1d+5uxYmRD6eM/EyxWdPVgyLf6wocw==}
+    engines: {node: ^14.18.0 || ^16.10.0 || ^17.0.0 || ^18.0.0 || ^19.0.0}
+    dependencies:
+      c12: 1.2.0
+      create-require: 1.1.1
+      defu: 6.1.2
+      hookable: 5.5.1
+      jiti: 1.18.2
+      pathe: 1.1.0
+      pkg-types: 1.0.2
+      postcss-import-resolver: 2.0.0
+      scule: 1.0.0
+      std-env: 3.3.2
+      ufo: 1.1.1
+      unimport: 3.0.4
       untyped: 1.2.2
     transitivePeerDependencies:
       - rollup
@@ -5004,7 +5026,7 @@ packages:
       std-env: 3.3.2
       ufo: 1.1.1
       unenv: 1.2.2
-      unimport: 3.0.3_rollup@3.19.1
+      unimport: 3.0.4_rollup@3.19.1
       unstorage: 1.4.0
     transitivePeerDependencies:
       - debug
@@ -6753,6 +6775,41 @@ packages:
 
   /unimport/3.0.3_rollup@3.19.1:
     resolution: {integrity: sha512-RzQqQiqepF5P13SwBGCe4pLlRnAQlbFuDAaQlSkXiNJDpN2iymtGMSfa75AcVSejgV05Q2aQYt6UhCiy5GuZ2A==}
+    dependencies:
+      '@rollup/pluginutils': 5.0.2_rollup@3.19.1
+      escape-string-regexp: 5.0.0
+      fast-glob: 3.2.12
+      local-pkg: 0.4.3
+      magic-string: 0.30.0
+      mlly: 1.2.0
+      pathe: 1.1.0
+      pkg-types: 1.0.2
+      scule: 1.0.0
+      strip-literal: 1.0.1
+      unplugin: 1.3.1
+    transitivePeerDependencies:
+      - rollup
+    dev: true
+
+  /unimport/3.0.4:
+    resolution: {integrity: sha512-eoof/HLiNJcIkVpnqc7sJbzKSLx39J6xTaP7E4ElgVQKeq2t9fPTkvJKcA55IJTaRPkEkDq8kcc/IZPmrypnFg==}
+    dependencies:
+      '@rollup/pluginutils': 5.0.2
+      escape-string-regexp: 5.0.0
+      fast-glob: 3.2.12
+      local-pkg: 0.4.3
+      magic-string: 0.30.0
+      mlly: 1.2.0
+      pathe: 1.1.0
+      pkg-types: 1.0.2
+      scule: 1.0.0
+      strip-literal: 1.0.1
+      unplugin: 1.3.1
+    transitivePeerDependencies:
+      - rollup
+
+  /unimport/3.0.4_rollup@3.19.1:
+    resolution: {integrity: sha512-eoof/HLiNJcIkVpnqc7sJbzKSLx39J6xTaP7E4ElgVQKeq2t9fPTkvJKcA55IJTaRPkEkDq8kcc/IZPmrypnFg==}
     dependencies:
       '@rollup/pluginutils': 5.0.2_rollup@3.19.1
       escape-string-regexp: 5.0.0
