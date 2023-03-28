@@ -40,7 +40,7 @@
     "feed": "^4.2.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "17.5.0",
+    "@commitlint/cli": "17.5.1",
     "@commitlint/config-conventional": "17.4.4",
     "@nuxt/eslint-config": "0.1.1",
     "@nuxt/module-builder": "0.2.1",
