@@ -36,7 +36,7 @@
     "stackblitz": "cd .stackblitz && pnpm i && pnpm run dev"
   },
   "dependencies": {
-    "@nuxt/kit": "3.3.2",
+    "@nuxt/kit": "3.3.3",
     "feed": "^4.2.2"
   },
   "devDependencies": {
