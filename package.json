@@ -50,7 +50,7 @@
     "eslint": "8.37.0",
     "husky": "8.0.3",
     "lint-staged": "13.2.0",
-    "nuxt": "3.3.3",
+    "nuxt": "3.6.5",
     "vitest": "0.29.8"
   },
   "lint-staged": {
