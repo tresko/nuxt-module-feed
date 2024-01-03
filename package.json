@@ -27,7 +27,7 @@
     "dev:build": "nuxi build playground",
     "dev:preview": "nuxi preview playground",
     "dev:typecheck": "nuxi typecheck playground",
-    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "dev:prepare": "nuxt-module-build build --stub && nuxt-module-build prepare && nuxi prepare playground",
     "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
     "lint": "eslint .",
     "test": "vitest run",
@@ -36,22 +36,22 @@
     "stackblitz": "cd .stackblitz && pnpm i && pnpm run dev"
   },
   "dependencies": {
-    "@nuxt/kit": "3.3.3",
+    "@nuxt/kit": "3.9.0",
     "feed": "^4.2.2"
   },
   "devDependencies": {
     "@commitlint/cli": "17.5.1",
     "@commitlint/config-conventional": "17.4.4",
-    "@nuxt/eslint-config": "0.1.1",
-    "@nuxt/module-builder": "0.2.1",
-    "@nuxt/schema": "3.3.2",
-    "@nuxt/test-utils": "3.3.3",
+    "@nuxt/eslint-config": "0.2.0",
+    "@nuxt/module-builder": "0.5.5",
+    "@nuxt/schema": "3.9.0",
+    "@nuxt/test-utils": "3.9.0",
     "changelogen": "0.5.2",
-    "eslint": "8.37.0",
+    "eslint": "^8.56.0",
     "husky": "8.0.3",
     "lint-staged": "13.2.0",
-    "nuxt": "3.3.3",
-    "vitest": "0.29.8"
+    "nuxt": "3.9.0",
+    "vitest": "^0.33.0"
   },
   "lint-staged": {
     "*.+(js|ts|vue)": [
@@ -62,5 +62,8 @@
   "stackblitz": {
     "installDependencies": false,
     "startCommand": "pnpm run stackblitz"
+  },
+  "resolutions": {
+    "@nuxt/kit": ">=3.2.3"
   }
 }

@@ -33,6 +33,8 @@ jobs:
         run: npm install -g pnpm
       - name: Install dependencies
         run: pnpm install
+      - name: Prepare env
+        run: pnpm run dev:prepare
       - name: Lint
         run: pnpm run lint
       - name: Tests
