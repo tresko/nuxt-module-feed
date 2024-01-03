@@ -1,4 +1,13 @@
 {
   "private": true,
-  "name": "nuxt-module-feed-playground"
+  "name": "nuxt-module-feed-playground",
+  "type": "module",
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate"
+  },
+  "devDependencies": {
+    "nuxt": "3.9.0"
+  }
 }
