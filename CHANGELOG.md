@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v1.1.2
+
+[compare changes](https://github.com/tresko/nuxt-module-feed/compare/v1.1.0...v1.1.2)
+
+### 🏡 Chore
+
+- Update dependencies ([6dfb535](https://github.com/tresko/nuxt-module-feed/commit/6dfb535))
+- Update dependencies ([3ed7361](https://github.com/tresko/nuxt-module-feed/commit/3ed7361))
+- Set schema version in resolutions ([6d8b485](https://github.com/tresko/nuxt-module-feed/commit/6d8b485))
+
+### ❤️ Contributors
+
+- Miha Sedej <sedej.miha@gmail.com>
+
 ## v1.1.0
 
 [compare changes](https://github.com/tresko/nuxt-module-feed/compare/v1.0.3...v1.1.0)
