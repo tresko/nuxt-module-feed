@@ -1,58 +1,58 @@
 // Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
 exports[`ssr > renders the atom feed 1`] = `
-"<?xml version=\\"1.0\\" encoding=\\"utf-8\\"?>
-<feed xmlns=\\"http://www.w3.org/2005/Atom\\">
+"<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
     <id>Test Feed</id>
     <title>Test Feed</title>
     <updated>2023-01-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <rights>Test company</rights>
-    <category term=\\"Nuxt.js\\"/>
+    <category term="Nuxt.js"/>
     <contributor>
         <name>Miha Sedej</name>
         <email>sedej.miha@gmail.com</email>
         <uri>https://tresko.dev/</uri>
     </contributor>
     <entry>
-        <title type=\\"html\\"><![CDATA[Post 1]]></title>
+        <title type="html"><![CDATA[Post 1]]></title>
         <id>https://example.com/post-1</id>
-        <link href=\\"https://example.com/post-1\\"/>
+        <link href="https://example.com/post-1"/>
         <updated>2022-01-01T00:00:00.000Z</updated>
-        <summary type=\\"html\\"><![CDATA[This is the first post]]></summary>
-        <content type=\\"html\\"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit.]]></content>
+        <summary type="html"><![CDATA[This is the first post]]></summary>
+        <content type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit.]]></content>
     </entry>
     <entry>
-        <title type=\\"html\\"><![CDATA[Post 2]]></title>
+        <title type="html"><![CDATA[Post 2]]></title>
         <id>https://example.com/post-2</id>
-        <link href=\\"https://example.com/post-2\\"/>
+        <link href="https://example.com/post-2"/>
         <updated>2022-01-05T00:00:00.000Z</updated>
-        <summary type=\\"html\\"><![CDATA[This is the second post]]></summary>
-        <content type=\\"html\\"><![CDATA[Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]]></content>
+        <summary type="html"><![CDATA[This is the second post]]></summary>
+        <content type="html"><![CDATA[Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.]]></content>
     </entry>
     <entry>
-        <title type=\\"html\\"><![CDATA[Post 3]]></title>
+        <title type="html"><![CDATA[Post 3]]></title>
         <id>https://example.com/post-3</id>
-        <link href=\\"https://example.com/post-3\\"/>
+        <link href="https://example.com/post-3"/>
         <updated>2022-01-10T00:00:00.000Z</updated>
-        <summary type=\\"html\\"><![CDATA[This is the third post]]></summary>
-        <content type=\\"html\\"><![CDATA[Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.]]></content>
+        <summary type="html"><![CDATA[This is the third post]]></summary>
+        <content type="html"><![CDATA[Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.]]></content>
     </entry>
     <entry>
-        <title type=\\"html\\"><![CDATA[Post 4]]></title>
+        <title type="html"><![CDATA[Post 4]]></title>
         <id>https://example.com/post-4</id>
-        <link href=\\"https://example.com/post-4\\"/>
+        <link href="https://example.com/post-4"/>
         <updated>2022-01-15T00:00:00.000Z</updated>
-        <summary type=\\"html\\"><![CDATA[This is the fourth post]]></summary>
-        <content type=\\"html\\"><![CDATA[Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.]]></content>
+        <summary type="html"><![CDATA[This is the fourth post]]></summary>
+        <content type="html"><![CDATA[Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.]]></content>
     </entry>
     <entry>
-        <title type=\\"html\\"><![CDATA[Post 5]]></title>
+        <title type="html"><![CDATA[Post 5]]></title>
         <id>https://example.com/post-5</id>
-        <link href=\\"https://example.com/post-5\\"/>
+        <link href="https://example.com/post-5"/>
         <updated>2022-01-20T00:00:00.000Z</updated>
-        <summary type=\\"html\\"><![CDATA[This is the fifth post]]></summary>
-        <content type=\\"html\\"><![CDATA[Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content>
+        <summary type="html"><![CDATA[This is the fifth post]]></summary>
+        <content type="html"><![CDATA[Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.]]></content>
     </entry>
 </feed>"
 `;
@@ -107,8 +107,8 @@ exports[`ssr > renders the json feed 1`] = `
 `;
 
 exports[`ssr > renders the rss feed 1`] = `
-"<?xml version=\\"1.0\\" encoding=\\"utf-8\\"?>
-<rss version=\\"2.0\\" xmlns:dc=\\"http://purl.org/dc/elements/1.1/\\" xmlns:content=\\"http://purl.org/rss/1.0/modules/content/\\">
+"<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>Test Feed</title>
         <link>undefined</link>
