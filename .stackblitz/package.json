@@ -11,6 +11,6 @@
     "nuxt": "3.10.3"
   },
   "dependencies": {
-    "nuxt-module-feed": "^1.0.3"
+    "nuxt-module-feed": "1.1.2"
   }
 }
