@@ -1,8 +1,10 @@
 import type { H3Event } from 'h3'
+// @ts-ignore
 import { defineEventHandler, setHeader, useNitroApp } from '#imports'
 import { Feed } from 'feed'
+// @ts-ignore
 import feedOptions from '#feed'
-import type { SourceOptions, FeedType, SourceOptions } from '../../types'
+import type { SourceOptions, FeedType } from '../../types'
 
 function resolveContentType(type: FeedType) {
   const lookup = {

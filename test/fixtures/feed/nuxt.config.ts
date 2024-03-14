@@ -1,8 +1,6 @@
-import NuxtModuleFeed from '../../../src/module'
-
 export default defineNuxtConfig({
   modules: [
-    NuxtModuleFeed
+    '../../../src/module'
   ],
 
   feed: {

@@ -18,7 +18,7 @@ export default defineNuxtModule<ModuleOptions>({
     options.sources.forEach((source) => {
       addServerHandler({
         route: source.path,
-        handler: resolver.resolve('./runtime/routes/feed'),
+        handler: resolver.resolve('./runtime/server/feed'),
         method: 'get',
       })
 
