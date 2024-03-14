@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.1.4
+
+[compare changes](https://github.com/tresko/nuxt-module-feed/compare/v1.1.2...v1.1.4)
+
+### 🩹 Fixes
+
+- **deps:** Update nuxtjs monorepo to v3.10.3 ([3a9cb4a](https://github.com/tresko/nuxt-module-feed/commit/3a9cb4a))
+- **deps:** Update dependency nuxt-module-feed to v1.1.0 ([f3076fa](https://github.com/tresko/nuxt-module-feed/commit/f3076fa))
+
+### 🏡 Chore
+
+- Update stackblitz deps ([0a070df](https://github.com/tresko/nuxt-module-feed/commit/0a070df))
+- Fix types ([26a486d](https://github.com/tresko/nuxt-module-feed/commit/26a486d))
+
+### ❤️ Contributors
+
+- Miha Sedej <sedej.miha@gmail.com>
+
 ## v1.1.2
 
 [compare changes](https://github.com/tresko/nuxt-module-feed/compare/v1.1.0...v1.1.2)
