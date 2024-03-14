@@ -51,13 +51,13 @@
         "../public"
       ],
       "#app": [
-        "../../node_modules/.pnpm/nuxt@3.9.0_@types+node@20.5.1_eslint@8.56.0_rollup@3.29.4_typescript@5.3.3_vite@5.0.10/node_modules/nuxt/dist/app"
+        "../../node_modules/.pnpm/nuxt@3.10.3_@types+node@20.10.6_eslint@8.57.0_rollup@3.29.4_typescript@5.3.3_vite@5.0.10/node_modules/nuxt/dist/app"
       ],
       "#app/*": [
-        "../../node_modules/.pnpm/nuxt@3.9.0_@types+node@20.5.1_eslint@8.56.0_rollup@3.29.4_typescript@5.3.3_vite@5.0.10/node_modules/nuxt/dist/app/*"
+        "../../node_modules/.pnpm/nuxt@3.10.3_@types+node@20.10.6_eslint@8.57.0_rollup@3.29.4_typescript@5.3.3_vite@5.0.10/node_modules/nuxt/dist/app/*"
       ],
       "vue-demi": [
-        "../../node_modules/.pnpm/nuxt@3.9.0_@types+node@20.5.1_eslint@8.56.0_rollup@3.29.4_typescript@5.3.3_vite@5.0.10/node_modules/nuxt/dist/app/compat/vue-demi"
+        "../../node_modules/.pnpm/nuxt@3.10.3_@types+node@20.10.6_eslint@8.57.0_rollup@3.29.4_typescript@5.3.3_vite@5.0.10/node_modules/nuxt/dist/app/compat/vue-demi"
       ],
       "#feed": [
         "./feedOptions.mjs"
@@ -83,19 +83,18 @@
     "./nuxt.d.ts",
     "../**/*",
     "../../../../../../tresk/runtime",
-    "../../../../../.nvm/versions/node/v18.7.0/lib/node_modules/@nuxt/devtools/runtime",
+    "../../node_modules/.pnpm/@nuxt+devtools@1.0.8_nuxt@3.10.3_rollup@3.29.4_vite@5.0.10/node_modules/@nuxt/devtools/runtime",
     "../../node_modules/.pnpm/@nuxt+telemetry@2.5.3_rollup@3.29.4/node_modules/@nuxt/telemetry/runtime",
     "..",
-    "../../node_modules/.pnpm/nuxt@3.9.0_@types+node@20.5.1_eslint@8.56.0_rollup@3.29.4_typescript@5.3.3_vite@5.0.10/node_modules/nuxt/dist/app",
-    "../../node_modules/.pnpm/nuxt@3.9.0_@types+node@20.5.1_eslint@8.56.0_rollup@3.29.4_typescript@5.3.3_vite@5.0.10/node_modules/nuxt/dist/app/compat/vue-demi"
+    "../../node_modules/.pnpm/nuxt@3.10.3_@types+node@20.10.6_eslint@8.57.0_rollup@3.29.4_typescript@5.3.3_vite@5.0.10/node_modules/nuxt/dist/app",
+    "../../node_modules/.pnpm/nuxt@3.10.3_@types+node@20.10.6_eslint@8.57.0_rollup@3.29.4_typescript@5.3.3_vite@5.0.10/node_modules/nuxt/dist/app/compat/vue-demi"
   ],
   "exclude": [
     "../node_modules",
     "../../node_modules",
-    "../../node_modules/.pnpm/nuxt@3.9.0_@types+node@20.5.1_eslint@8.56.0_rollup@3.29.4_typescript@5.3.3_vite@5.0.10/node_modules/nuxt/node_modules",
-    "../../../../../.nvm/versions/node/v18.7.0/lib/node_modules/@nuxt/devtools",
+    "../../node_modules/.pnpm/nuxt@3.10.3_@types+node@20.10.6_eslint@8.57.0_rollup@3.29.4_typescript@5.3.3_vite@5.0.10/node_modules/nuxt/node_modules",
     "../../../../../../tresk/runtime/server",
-    "../../../../../.nvm/versions/node/v18.7.0/lib/node_modules/@nuxt/devtools/runtime/server",
+    "../../node_modules/.pnpm/@nuxt+devtools@1.0.8_nuxt@3.10.3_rollup@3.29.4_vite@5.0.10/node_modules/@nuxt/devtools/runtime/server",
     "../../node_modules/.pnpm/@nuxt+telemetry@2.5.3_rollup@3.29.4/node_modules/@nuxt/telemetry/runtime/server",
     "../dist",
     "../.output"

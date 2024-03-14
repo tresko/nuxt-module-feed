@@ -5,9 +5,10 @@
   "scripts": {
     "dev": "nuxi dev",
     "build": "nuxi build",
+    "preview": "nuxi preview",
     "generate": "nuxi generate"
   },
   "devDependencies": {
-    "nuxt": "3.9.0"
+    "nuxt": "3.10.3"
   }
 }
