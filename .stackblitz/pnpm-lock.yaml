@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   nuxt-module-feed:
-    specifier: 1.1.2
-    version: 1.1.2
+    specifier: 1.1.4
+    version: 1.1.4
 
 devDependencies:
   nuxt:
@@ -4217,8 +4217,8 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /nuxt-module-feed@1.1.2:
-    resolution: {integrity: sha512-h24jsJhx+md4uQ+MQN4bl6+GedMa4yL6OqJt5E39dbuwSM02UPK8z2wX2F64kiamCL2RAtTfg4hvzOsxmAohIw==}
+  /nuxt-module-feed@1.1.4:
+    resolution: {integrity: sha512-Vh3uU8v9Hxh3cimTez9qZfswuMhnD2dT3q0rY47Q29pFqSYDzh6mdnuPQxtwVcdki2tB8QyuKv96IM66yLmdVw==}
     dependencies:
       '@nuxt/kit': 3.10.3
       feed: 4.2.2
