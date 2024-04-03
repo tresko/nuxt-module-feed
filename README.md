@@ -25,14 +25,7 @@ Feed module enables everyone to have RSS, Atom and JSON.
 1. Add `nuxt-module-feed` dependency to your project
 
 ```bash
-# Using pnpm
-pnpm add -D nuxt-module-feed
-
-# Using yarn
-yarn add --dev nuxt-module-feed
-
-# Using npm
-npm install --save-dev nuxt-module-feed
+npx nuxi@latest module add module-feed
 ```
 
 2. Add `nuxt-module-feed` to the `modules` section of `nuxt.config.ts`
