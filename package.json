@@ -40,8 +40,8 @@
     "feed": "4.2.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "19.1.0",
-    "@commitlint/config-conventional": "19.1.0",
+    "@commitlint/cli": "19.5.0",
+    "@commitlint/config-conventional": "19.5.0",
     "@nuxt/eslint-config": "0.2.0",
     "@nuxt/module-builder": "0.5.5",
     "@nuxt/schema": "3.10.3",
