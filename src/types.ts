@@ -1,3 +1,5 @@
+import type { H3Event } from 'h3'
+
 import type { Feed } from 'feed'
 
 export type { Feed } from 'feed'
@@ -21,6 +23,6 @@ export interface NitroCtx {
 
 declare module 'nitropack' {
   interface NitroRuntimeHooks {
-    'feed:generate': (ctx: NitroCtx) => void;
+    'feed:generate': (ctx: NitroCtx, event: H3Event) => void;
   }
 }
