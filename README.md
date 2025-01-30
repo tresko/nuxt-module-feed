@@ -76,22 +76,77 @@ modifying the feed object that is passed to the create function.
 Note: It works for SSG and prerendered pages.
 
 ```ts
+import type { H3Event } from "h3";
 import type { NitroCtx, Feed } from "nuxt-module-feed";
+import { setHeader } from '#imports'
+import process from 'node:process';
 
 export default defineNitroPlugin((nitroApp) => {
-  nitroApp.hooks.hook("feed:generate", async ({ feed, options }: NitroCtx) => {
+  nitroApp.hooks.hook("feed:generate", async ({ feed, options }: NitroCtx, event: H3Event) => {
     switch (options.path) {
       case "/feed.xml": {
-        createTestFeed(feed);
+        createNuxtContentFeed(feed);
         break;
       }
       case "/feed2.xml": {
         createTestFeed(feed);
         break;
       }
+
+      // { path: "/feed3.xml", type: "rss2",  cacheTime: 60 * 15 }
+      case "/feed3.xml": {
+        setHeader(event, 'content-type', 'application/xml; charset=UTF-8');
+        createNuxtContentFeed(feed);
+        break;
+      }
+
+      // { path: "/feed3.atom", type: "atom1",  cacheTime: 60 * 15 }
+      case "/feed3.atom": {
+        setHeader(event, 'content-type', 'application/atom+xml; charset=UTF-8');
+        createNuxtContentFeed(feed);
+        break;
+      }
+
+      // { path: "/feed3.json", type: "json1",  cacheTime: 60 * 15 }
+      case "/feed3.json": {
+        setHeader(event, 'content-type', 'application/json; charset=UTF-8');
+        createNuxtContentFeed(feed);
+        break;
+      }
       ...
     }
   });
+
+  /**
+   * Nuxt Content
+   * https://content.nuxt.com/
+   */
+  function createNuxtContentFeed(feed: Feed, event: H3Event) {
+    feed.options = {
+      id: "Test Feed",
+      title: "Test Feed",
+      copyright: "Test company",
+    };
+    feed.addCategory("Nuxt.js");
+    feed.addContributor({
+      name: "Miha Sedej",
+      email: "sedej.miha@gmail.com",
+      link: "https://tresko.dev/",
+    });
+
+    const posts = await queryCollection(event, 'posts').all()
+    const url = process.env.NUXT_SITE_URL || 'https://example.dev'
+    for (const post of posts) {
+      feed.addItem({
+        id: post.id,
+        link: `${url}${post.path}`,
+        date: new Date(post.date),
+        title: post.title,
+        content: post.rawbody,
+        description: post.description,
+      })
+    }
+  }
 
   function createTestFeed(feed: Feed) {
     feed.options = {

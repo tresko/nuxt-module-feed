@@ -16,14 +16,14 @@ function resolveContentType(type: FeedType) {
   return lookup[type]
 }
 
-async function createFeed(options: SourceOptions): Promise<string> {
+async function createFeed(options: SourceOptions, event: H3Event): Promise<string> {
   const feed = new Feed({
     id: '',
     title: '',
     copyright: '',
   })
 
-  await useNitroApp().hooks.callHook('feed:generate', { feed, options })
+  await useNitroApp().hooks.callHook('feed:generate', { feed, options }, event)
 
   return feed[options.type]()
 }
@@ -32,6 +32,6 @@ export default defineEventHandler(async (event: H3Event) => {
   const options = (feedOptions as Record<string, SourceOptions>)[event.node.req.url as string]
   setHeader(event, 'content-type', resolveContentType(options.type))
   setHeader(event, 'cache-control', `max-age=${options.cacheTime}`)
-  const feed = await createFeed(options)
+  const feed = await createFeed(options, event)
   return feed
 })

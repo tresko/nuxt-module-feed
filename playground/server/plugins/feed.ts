@@ -1,9 +1,11 @@
+import { H3Event } from 'h3';
 import type { NitroCtx, Feed } from '../../../src/module'
 
 export default defineNitroPlugin((nitroApp) => {
-  nitroApp.hooks.hook('feed:generate', async ({ feed, options }: NitroCtx) => {
+  nitroApp.hooks.hook('feed:generate', async ({ feed, options }: NitroCtx, event: H3Event) => {
     switch(options.path) {
       case '/feed.xml': {
+        setHeader(event, 'content-type', 'application/xml; charset=UTF-8');
         createTestFeed(feed)
         break
       }
@@ -29,7 +31,7 @@ export default defineNitroPlugin((nitroApp) => {
       date: Date;
       image: string;
     };
-    
+
     const posts: Post[] = [
       {
         title: "Post 1",
@@ -69,6 +71,14 @@ export default defineNitroPlugin((nitroApp) => {
         description: "This is the fifth post",
         content: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         date: new Date("2022-01-20"),
+        image: "https://example.com/images/post5.jpg",
+      },
+      {
+        title: "帖子 6",
+        url: "https://example.com/post-6",
+        description: "这是第六篇帖子",
+        content: "除非有意外情况发生，否则那些故意造成伤害的人将被追究责任，他们的行为将被视为严重的过失。",
+        date: new Date("2025-01-30"),
         image: "https://example.com/images/post5.jpg",
       },
     ];
