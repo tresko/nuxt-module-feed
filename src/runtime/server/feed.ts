@@ -8,7 +8,7 @@ import type { SourceOptions, FeedType } from '../../types'
 
 function resolveContentType(type: FeedType) {
   const lookup = {
-    rss2: 'application/rss+xml',
+    rss2: 'application/rss+xml; charset=UTF-8',
     atom1: 'application/atom+xml',
     json1: 'application/json'
   }
