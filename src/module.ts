@@ -23,7 +23,7 @@ export default defineNuxtModule<ModuleOptions>({
       })
 
       // Handle SSG
-      if (nuxt.options._generate) {
+      if (nuxt.options.nitro.static || (nuxt.options as any)._generate /* TODO: remove in future */) {
         addPrerenderRoutes([source.path])
       }
 
